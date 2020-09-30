@@ -2,7 +2,7 @@
 
 You'd say [I'm biased](http://superfeedr.com/), but I'm a big fan of RSS. I'm convinced that the open web needs to provide a great "follow" pattern if it ever wants to compete with silos like Twitter of Facebook. 
 
-Unfortunately, publishing RSS feeds is often some kind of "sink": publishers put their content in them... and have very little data as to what happens next. Compare that to social networks where they have follower counts, engagement numbers, number of views. The lack of feedback loop is one of the reasons why it's so hard for publishers to advertise their RSS feeds.
+Unfortunately, publishing RSS feeds is often some kind of "sink": publishers put their content in them... and have very little data as to what happens next. Compare that to social networks where they have follower counts, engagement numbers, number of views. The lack of a feedback loop is one of the reasons why it's so hard for publishers to advertise their RSS feeds.
 
 I'm mostly using an RSS reader to stay in touch with the things I care about. Often, I want to share with the publishers of these stories that I liked them or even that I read them, and with RSS, it's mostly impossible (one of the sad consequences of the otherwise amazing decoupling between publishing and reading platforms).
 
@@ -12,9 +12,10 @@ This app solves this itch.
 
 I decided to *abuse* the fact that most feed readers these days provide APIs to sync with mobile applications. 
 
-This very simple app just looks at the recently starred items, or the recently read stories and will just ping the URLs using a `HEAD` request to tell the publishers I'm reading them. That should be extra *hits* in the server-side analytics solution :)
+This extremely easy
+ app just looks at the recently starred items, or the recently read stories and will just ping the URLs using a `HEAD` request to tell the publishers I'm reading them. That should be extra *hits* in the server-side analytics solution :)
 
-If you're a publisher, just look at your HTTP logs and you may see requests indicating I've read or starred your stories!
+If you're a publisher, just look at your HTTP logs and you may see requests showing I've read or starred your stories!
 Here are the fields you may be interested in:
 
 * `From`: this would be my email for now
